@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title Document
+  link(rel="stylesheet" href="stylesheets/main.css")
+body
+  header
+    nav(class="nav")
+      img(src="http://grupotendencias.com/image/logo-grupo-tendencias.png" class="nav__img")
+      ul(class="nav__menu")
+        -var menu = ['metodología','encuestas','noticias','articulos','nosotros','registro']
+        each val in menu
+          li
+            a(href="/#{val}")=val
+  block contenido
+    

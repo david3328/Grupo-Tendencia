@@ -1,0 +1,10 @@
+extends ./layout.jade
+block contenido
+  h1 Ingresar nuevo artículo
+  div(class="formulario")
+    form(action="/postear" method="post")
+      h3 Titulo
+      input(type="text" name="titulo" placeholder="Ingrese titulo")
+      h3 Contenido
+      textarea Inregrese articulo
+      input(type="submit" value="Registrar" name="registrar" class="boton")
